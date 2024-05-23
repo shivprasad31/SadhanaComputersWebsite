@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Website</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -20,34 +21,63 @@
   </nav>
   
   <section>
-    <img src="head.jpg.jpeg">
-    <p>At our MSCIT center, we pride ourselves on offering a comprehensive array of services tailored to empower
-      individuals with digital literacy and technological proficiency. Our commitment extends beyond mere instruction;
-      we strive to cultivate an environment where learners can thrive, explore, and evolve their skills with confidence.
+    
+<div class="slideshow-container">
+  <div class="mySlides fade">
+      <img src="image.jpeg" style="width:100%">
+  </div>
 
-      First and foremost, we provide top-notch MSCIT training courses designed to equip our students with the essential
-      knowledge and expertise needed to navigate the dynamic landscape of information technology. Whether you're a
-      novice seeking to familiarize yourself with computer basics or a seasoned professional aiming to enhance your
-      proficiency, our curriculum is meticulously crafted to accommodate learners of all levels.
+  <div class="mySlides fade">
+      <img src="image2.jpg" style="width:100%">
+  </div>
 
-      In addition to our structured coursework, we offer personalized guidance and support to ensure that each student
-      receives the attention they deserve. Our experienced instructors are dedicated to fostering a collaborative
-      learning environment where questions are encouraged, challenges are embraced, and successes are celebrated.
+  <div class="mySlides fade">
+      <img src="image3.jpg" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
 
-      Furthermore, we understand that flexibility is paramount in today's fast-paced world. That's why we offer a
-      variety of scheduling options, including evening and weekend classes, to accommodate diverse lifestyles and
-      commitments. Whether you're balancing work, family, or other responsibilities, we're here to make learning
-      accessible and convenient for you.
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<div style="text-align:center;border: 5cm;">
+<h1>BEST COMPUTER EDUCATION IN BIDRI</h1>
+</div>
 
-      Beyond the classroom, we provide a range of supplementary resources and enrichment activities to enrich the
-      learning experience. From interactive workshops and seminars to access to cutting-edge software and technology,
-      we're committed to empowering our students with the tools they need to excel in an increasingly digital world.
+<div class="container">
+  <button class="nav-btn prev-btn" onclick="scrollCards(-300)">&#10094; Previous</button>
+  
+  <div class="card">
+    <h2>Card 1</h2>
+    <p>This is some information about Card 1.</p>
+    <a href="page1.html" class="btn">Know More</a>
+  </div>
 
-      At our MSCIT center, our services extend far beyond the confines of traditional education. We're dedicated to
-      nurturing lifelong learners, fostering a culture of innovation, and empowering individuals to reach their full
-      potential. Join us on this transformative journey and unlock the boundless opportunities that await in the realm
-      of information technology.</p>
-  </section>
+  <div class="card">
+    <h2>Card 2</h2>
+    <p>This is some information about Card 2.</p>
+    <a href="page2.html" class="btn">Know More</a>
+  </div>
+
+  <div class="card">
+    <h2>Card 3</h2>
+    <p>This is some information about Card 3.</p>
+    <a href="page3.html" class="btn">Know More</a>
+  </div>
+
+  <div class="card">
+    <h2>Card 4</h2>
+    <p>This is some information about Card 4.</p>
+    <a href="page4.html" class="btn">Know More</a>
+  </div>
+
+  <button class="nav-btn next-btn" onclick="scrollCards(300)">Next &#10095;</button>
+</div>
+
   <footer>
     <p>&copy; 2024 My Website. All Rights Reserved.</p>
   </footer>
